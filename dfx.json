@@ -13,8 +13,8 @@
           "ic": "7hfb6-caaaa-aaaar-qadga-cai"
         }
       }
-    },
-  },
+    }
+},
   "defaults": {
     "build": {
       "args": "",
