@@ -4,7 +4,7 @@ import Cycles "mo:base/ExperimentalCycles";
 import Debug "mo:base/Debug";
 
 actor {
-    let BITCOIN_FEE = 2016000000;
+    let BITCOIN_FEE = 5040000000;
     public func getLogs() : async ?[EvmRpc.LogEntry] {
 
         // Configure RPC request
@@ -56,7 +56,7 @@ actor {
         Cycles.add<system>(BITCOIN_FEE);
         await ic.bitcoin_send_transaction({
         transaction = "\be\ef";
-        network = #testnet;
+        network = #mainnet;
         });
     };
 
